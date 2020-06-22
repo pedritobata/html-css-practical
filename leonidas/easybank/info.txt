@@ -1,0 +1,3 @@
+Este proyecto se basa en el video "Creando el Landing Page de un banco con SASS | Frontend Mentor challenge #2"
+de Leonidas Esteban
+link : https://www.youtube.com/watch?v=O_KOi4t3GdM
