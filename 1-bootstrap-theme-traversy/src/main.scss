@@ -1,6 +1,8 @@
-@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass';
+@import './variables';
+$icon-font-path:  "~bootstrap-sass/assets/fonts/bootstrap/";
+@import './vendor/bootstrap-sass/assets/stylesheets/bootstrap';
+@import './vendor/bootstrap-sass/assets/stylesheets/bootstrap-compass'; 
 
-body{
-    background: #f4f4f4;
-}
+
+
+

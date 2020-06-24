@@ -13,10 +13,11 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     { loader: MiniCssExtractPlugin.loader },
-                    //{ loader: 'resolve-url-loader' },
+                   /*  { loader: 'resolve-url-loader' }, */
+                    { loader: 'style-loader' },
                     { loader: 'css-loader' },
                     { loader: 'sass-loader' },
-                    { loader: 'postcss-loader' },
+                   /*  { loader: 'postcss-loader' }, */
                     /* {
                         loader: 'postcss-loader',
                         options: {
@@ -29,6 +30,22 @@ module.exports = {
                         }
                       } */
                 ]
+            },
+            {
+                test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+            },
+            {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?limit=10000&mimetype=application/octet-stream'
+            },
+            {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader'
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
             }
         ]
     },
