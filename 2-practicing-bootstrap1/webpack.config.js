@@ -23,7 +23,7 @@ module.export = {
                             implementation: require('sass')
                         }
                     },
-                     /*   {
+                  {
                         loader: 'postcss-loader',
                         options: {
                             plugins: function(){
@@ -32,11 +32,11 @@ module.export = {
                                 ]
                             }
                         }
-                    }, */
+                    }, 
                 ]
             }
         ]
-    },
+    } ,
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'

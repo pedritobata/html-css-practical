@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx webpack-dev-server -d"
+    "start": "npx webpack-dev-server -d",
+    "sass-start": "sass --watch src/main.scss:dist/main.css"
   },
   "author": "",
   "license": "ISC",
