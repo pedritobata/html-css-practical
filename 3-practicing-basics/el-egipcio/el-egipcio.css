@@ -1,0 +1,42 @@
+
+
+html {
+ /*    font-size: 16px; */
+}
+
+:root {
+   --image-options-size: 3rem; 
+   --brand-image-size: 90px,
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+   background-image: url('./assets/img/franja.jpg'); 
+   background-repeat: no-repeat;
+}
+
+.brand{
+    /* font-size: 0; */
+    
+}
+
+.brand img{
+    width: var(--brand-image-size);
+    vertical-align: middle;
+    padding-top: 2px;
+}
+
+.img-options img{
+    width: var(--image-options-size);
+    vertical-align: middle;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
