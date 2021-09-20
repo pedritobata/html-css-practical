@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/*  COMMON  */
+.container {
+  width: 85%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.primary-title {
+  font-size: clamp(4rem, 3.5vw + 2rem, 6.9rem);
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.button {
+  padding: 1.2rem 1.8rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--color-primary, red);
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  transition: transform 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    opacity: .9;
+  }
+}
+
+/*  UTILS  */
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.spacing {
+  & > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/*  CUSTOM: HERO  */
+.hero {
+  color: white;
+  height: 96vh;
+  background: #333;
+  @supports (background-blend-mode: multiply) {
+    background: url(../img/shoe-3.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: clamp(71vh, 69vw, 69vw), 100%;
+  }
+}
+
+/*  CUSTOM: FEATURED PRODUCTS  */
+
+/*  CUSTOM: OUR PRODUCTS  */
